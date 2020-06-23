@@ -13,16 +13,16 @@
     rxjs "6.4.0"
     source-map "0.7.3"
 
-"@nativescript/core@6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.4.2.tgz#75fcc02bec7df9c8dde77695ba6c8693535830e0"
-  integrity sha512-iHzx4TdTKujltFqT3c9Rf2B3/BBRkFEnXnspjpGo2a+TDmiOB6KTnWuXo/WhQL/jxSe0iY3GboY1ByrGeIB+dw==
+"@nativescript/core@*":
+  version "6.5.8"
+  resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-6.5.8.tgz#24ec6981fa86c04524b024ede4870879dd5fdbb8"
+  integrity sha512-zxghkuVIXuWCtrPCnlq4eKbM2xNUPMxl+3NHu3gIE7eIcUVVZyoIbUdIEWfIYtt+Q7plHZ93xT/haJHWvsVMWg==
   dependencies:
     css-tree "^1.0.0-alpha.37"
     nativescript-hook "0.2.5"
     reduce-css-calc "^2.1.6"
     semver "6.3.0"
-    tns-core-modules-widgets "6.4.2"
+    tns-core-modules-widgets next
     tslib "1.10.0"
 
 "@nativescript/theme@~2.3.0":
@@ -490,9 +490,9 @@ binary-extensions@^1.0.0:
   integrity sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==
 
 binary-extensions@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.0.0.tgz#23c0df14f6a88077f5f986c0d167ec03c3d5537c"
-  integrity sha512-Phlt0plgpIIBOGTT/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X/MR+zSyBEkL05ffWgnRSf/DXv+WrUAVr93/ow==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.1.0.tgz#30fa40c9e7fe07dbc895678cd287024dea241dd9"
+  integrity sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==
 
 bindings@^1.5.0:
   version "1.5.0"
@@ -2677,7 +2677,19 @@ nativescript-hook@0.2.5:
     mkdirp "^0.5.1"
 
 nativescript-marqueelabel@../src:
-  version "1.0.0"
+  version "1.0.1"
+
+nativescript-ui-core@~4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-core/-/nativescript-ui-core-4.0.0.tgz#3233973d3766ef76a0f27c86a1939ae5b5e43421"
+  integrity sha512-YbGZApyI84RGSevCmXVD18yGov7/RJyLcIXXx6p2y4WM41hL+uRxyUak/9qLP2vwSSy0bCZKXFoyYwsIcf8EoA==
+
+nativescript-ui-listview@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-listview/-/nativescript-ui-listview-8.2.0.tgz#12df44b29fe46e2fa5336edd008619a44b744edb"
+  integrity sha512-mRPhqf8eOVUcRFoFDCKlkDihjai5DIQceoNwKQASIz0d7znw8VW0UReyt6au6ri/hlUXnxrEVhE5D9z7n7F8GQ==
+  dependencies:
+    nativescript-ui-core "~4.0.0"
 
 nativescript-worker-loader@~0.11.0:
   version "0.11.0"
@@ -3952,17 +3964,17 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tns-core-modules-widgets@6.4.2:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.4.2.tgz#b8ad6faf0ecdfbd17f48720a5876e23224d10d8b"
-  integrity sha512-kv4CFHUvIFRpwJP2klBB4rNEYQ/lvolf9f0+PjWGd61gvdYwztXaErknVw/3GfOwKKxmskjUlYvRM8AYroUfog==
+tns-core-modules-widgets@next:
+  version "6.6.0-next-2020-05-08-112112-01"
+  resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-6.6.0-next-2020-05-08-112112-01.tgz#0a7cc30d223ebb64589828175cfb23d9c6503e6e"
+  integrity sha512-aW30j6gKiXP48XOs6qdO2SiPx61pUYOlMmQVovQbG6vBB8WbUR9k9UviY1cY/DExNUBOSh3cMe8uLOpDWiR49A==
 
-tns-core-modules@~6.4.0:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.4.2.tgz#253b13fc25d8ac966f76e11d8f1bd969c1a42279"
-  integrity sha512-2Quhx3mYxhO06zZJiBKU+SzrTeF11G1rlbZHDVFljeF7x49Qdo2DzicgngZJrPy9uRBCW9wtWeB8SZ9liaIICA==
+tns-core-modules@~6.5.8:
+  version "6.5.8"
+  resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-6.5.8.tgz#f21652a84da022b92ed9f7c7799cbb7ffb055aea"
+  integrity sha512-PNyq7QI+COkd1OVtuhwPlcz0sTLEfGIck8e9VLwZ2sjSIAb6i9kyf9KBA/fwbqdRzOUM1F1SsLXXxdEIaWnEog==
   dependencies:
-    "@nativescript/core" "6.4.2"
+    "@nativescript/core" "*"
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
@@ -4080,10 +4092,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@~3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
-  integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
+typescript@~3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
 
 union-value@^1.0.0:
   version "1.0.1"

@@ -1,8 +1,8 @@
 import { Label } from "tns-core-modules/ui/label";
 
-declare let com, android: any;
+declare let android: any;
 
-export class MarqueeLabel extends Label {
+export class NSMarqueeLabel extends Label {
   public initNativeView(): void {
     super.initNativeView();
     this.nativeViewProtected.setMarqueeRepeatLimit(-1);

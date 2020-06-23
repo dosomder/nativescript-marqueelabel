@@ -1,12 +1,21 @@
 <Page
     navigatingTo="onNavigatingTo" 
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview"
+    xmlns:marquee="nativescript-marqueelabel">
     
     <ActionBar>
-        <Label text="Home"></Label>
+        <marquee:NSMarqueeLabel fontSize="20" text="Display items after 5 seconds. All long text has marquee effect" />
     </ActionBar>
 
     <GridLayout>
-        <!-- Add your page content here -->
+        <lv:RadListView items="{{ dataItems }}" >
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical">
+                    <Label fontSize="20" text="{{ itemName }}"/>
+                    <marquee:NSMarqueeLabel fontSize="14" text="{{ itemDescription }}"/>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
     </GridLayout>
 </Page>

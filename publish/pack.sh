@@ -7,7 +7,7 @@ ROOT_DIR=..;
 PUBLISH=--publish
 
 install(){
-    npm i
+    yarn install
 }
 
 pack() {

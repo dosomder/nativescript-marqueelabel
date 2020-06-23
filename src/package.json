@@ -1,6 +1,6 @@
 {
   "name": "nativescript-marqueelabel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Marquee effect for label.",
   "main": "nsmarqueelabel",
   "typings": "nsmarqueelabel.d.ts",
@@ -15,14 +15,14 @@
     "url": "https://github.com/dosomder/nativescript-marqueelabel.git"
   },
   "scripts": {
-    "tsc": "npm i && tsc",
+    "tsc": "yarn install && tsc",
     "build": "npm run tsc && npm run build.native",
     "build.native": "node scripts/build-native.js",
     "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
-    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
+    "ci.tslint": "yarn install && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
     "prepack": "npm run build.native",
     "demo.ios": "npm i && cd ../demo && tns run ios",
-    "demo.android": "npm i && cd ../demo && tns run android",
+    "demo.android": "yarn install && cd ../demo && tns run android",
     "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
     "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-marqueelabel && tns plugin add ../src",
     "clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i"

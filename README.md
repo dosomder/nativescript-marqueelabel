@@ -1,14 +1,12 @@
 # nativescript-marqueelabel
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
+This plugin extends the Label to allow for marquee (scrolling) text effect. It supports iOS and Android.
 
-Then describe what's the purpose of your plugin. 
+Android has marquee built in, for iOS https://github.com/cbpowell/MarqueeLabel/ is used.
 
-In case you develop UI plugin, this is where you can add some screenshots.
+## Prerequisites / Requirements
 
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+None.
 
 ## Installation
 
@@ -18,23 +16,22 @@ Describe your plugin installation steps. Ideally it would be something like:
 tns plugin add nativescript-marqueelabel
 ```
 
-## Usage 
+## Usage
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
+### Vue
+
+```javascript
+import MarqueeLabelPlugin from "nativescript-marqueelabel/vue";
+
+Vue.use(MarqueeLabelPlugin);
+```
+
+Then simply change `<Label></Label>` to `<MarqueeLabel></MarqueeLabel>`
 
 ## API
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
-    
+Currently none. PRs welcome.
+
 ## License
 
 Apache License Version 2.0, January 2004
