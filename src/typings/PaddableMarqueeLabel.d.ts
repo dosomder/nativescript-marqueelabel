@@ -28,6 +28,8 @@ declare class PaddableMarqueeLabel extends MarqueeLabel {
   static new(): PaddableMarqueeLabel; // inherited from NSObject
 
   padding: UIEdgeInsets;
+
+  borderThickness: UIEdgeInsets;
 }
 
 declare var PaddableMarqueeLabelVersionNumber: number;

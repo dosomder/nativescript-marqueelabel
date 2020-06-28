@@ -36,6 +36,6 @@ Then simply change `<Label></Label>` to `<MarqueeLabel></MarqueeLabel>`
 
 Currently none. PRs welcome.
 
-## License
+## Known issues
 
-Apache License Version 2.0, January 2004
+Padding and border properties do not work on iOS. For padding you can use margin instead.

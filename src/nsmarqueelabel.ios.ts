@@ -8,7 +8,7 @@ export class NSMarqueeLabel extends LabelDefinition {
   public createNativeView() {
     const view = PaddableMarqueeLabel.new();
     view.scrollRate = 24.0;
-    view.fadeLength = 10.0;
+    view.fadeLength = 6.0;
     view.userInteractionEnabled = true;
 
     return view;
