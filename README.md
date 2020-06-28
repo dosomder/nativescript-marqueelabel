@@ -16,6 +16,10 @@ Describe your plugin installation steps. Ideally it would be something like:
 tns plugin add nativescript-marqueelabel
 ```
 
+### Additional step for iOS
+
+Copy the contents of `App_Resources` in the `App_Resources` folder of your app.
+
 ## Usage
 
 ### Vue

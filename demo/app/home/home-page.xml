@@ -13,7 +13,7 @@
             <lv:RadListView.itemTemplate>
                 <StackLayout orientation="vertical">
                     <Label fontSize="20" text="{{ itemName }}"/>
-                    <marquee:NSMarqueeLabel fontSize="14" text="{{ itemDescription }}"/>
+                    <marquee:NSMarqueeLabel fontSize="14" text="{{ itemDescription }}" class="marquee_test" />
                 </StackLayout>
             </lv:RadListView.itemTemplate>
         </lv:RadListView>
